@@ -1,5 +1,4 @@
 :root {
-  box-sizing: border-box;
   --main-bg: hsl(217, 28%, 15%);
   --second-bg: hsl(218, 28%, 13%);
   --testimonial-bg: hsl(219, 30%, 18%);
@@ -9,6 +8,8 @@
   --blue: hsl(198, 60%, 50%);
   --primary-font: "Raleway";
   --secondary-font: "Open Sans";
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body {
   padding: 0;
@@ -45,6 +46,10 @@ body {
   font-family: var(--primary-font), sans-serif;
   font-size: 0.9rem;
 }
+a {
+  text-decoration: none;
+  color: var(--white-text);
+}
 /* Banner CSS */
 #banner {
   display: flex;
@@ -54,7 +59,8 @@ body {
   background-image: url("../images/bg-curvy-desktop.svg");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-position-y: 33rem;
+  background-position-y: 35rem;
+  background-position-x: -11rem;
 }
 #banner-content {
   display: flex;
@@ -186,6 +192,11 @@ body {
   padding: 1rem 2.5rem;
   transform: scale(0.8);
   border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
+  transition: transform 0.2s linear;
+}
+.testimonial-container:hover {
+  transform: scale(0.9);
 }
 .customer {
   display: flex;
@@ -244,6 +255,9 @@ body {
   position: relative;
   left: 0.5rem;
 }
+input[type="text"]:focus {
+  outline: none;
+}
 .email-btn {
   top: 0rem;
   padding: 0.7rem 3rem;
@@ -260,7 +274,63 @@ body {
 }
 /* Footer CSS */
 #footer {
-  display: flex;
   background: var(--footer-bg);
-  min-height: 20rem;
+  min-height: 30rem;
+  font-family: var(--primary-font), sans-serif;
+}
+#footer-pos {
+  position: relative;
+  top: 10rem;
+}
+.footer-logo {
+  position: relative;
+  left: 4.5rem;
+}
+#footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#footer-about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 30%;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+#footer-about p {
+  padding-left: 1rem;
+}
+.fa-map-marker {
+  position: relative;
+  top: 1.5rem;
+  transform: scale(1.5);
+}
+#footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-con {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.footer-con p {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.footer-nav ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+.footer-nav li {
+  padding: 0.5rem 0;
+}
+.social {
+  border: 1px solid var(--white-text);
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0 0.2rem;
 }

@@ -26,13 +26,23 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <style>
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: 3rem;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+      .fa-caret-up {
+        transform: scale(1.5);
+        padding: 0 0.2rem;
       }
     </style>
     <!-- Custom CSS -->
@@ -46,9 +56,9 @@
       </figure>
       <nav id="nav">
         <ul id="nav-links" class="mouse">
-          <li>Features</li>
-          <li>Team</li>
-          <li>Sign In</li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#email-container">Sign In</a></li>
         </ul>
       </nav>
     </header>
@@ -207,7 +217,7 @@
               placeholder="email@example.com"
               class="email-inp"
             />
-            <button class="btn mouse email-btn">Get Started</button>
+            <button class="btn mouse email-btn">Get Started For Free</button>
             <!--class="btn mouse"-->
           </form>
         </div>
@@ -216,18 +226,60 @@
     </main>
     <!--Main End -->
 
-    <!-- Get Started For Free Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    <!-- Get Started For 
     +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us Terms
     Privacy -->
 
     <footer id="footer">
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <div id="footer-pos">
+        <img src="./images/logo.svg" alt="logo" class="footer-logo" />
+        <div id="footer-content">
+          <div id="footer-about">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>
+              Free Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div id="footer-contact">
+            <div class="footer-con">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>+1-543-123-4567</p>
+            </div>
+            <div class="footer-con">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <p>example@fylo.com</p>
+            </div>
+          </div>
+          <div class="footer-nav mouse">
+            <ul>
+              <li>About Us</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="footer-nav mouse">
+            <ul>
+              <li>Contact Us</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
+          <div class="mouse">
+            <i class="fa fa-facebook social" aria-hidden="true"></i>
+            <i class="fa fa-twitter social" aria-hidden="true"></i>
+            <i class="fa fa-instagram social" aria-hidden="true"></i>
+          </div>
+        </div>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://twitter.com/kishoreio">Kishore.S</a>.
+          Hosted On <i class="fa fa-caret-up" aria-hidden="true"></i> vercel
+        </p>
+      </div>
     </footer>
   </body>
 </html>
