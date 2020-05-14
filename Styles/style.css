@@ -2,6 +2,8 @@
   box-sizing: border-box;
   --main-bg: hsl(217, 28%, 15%);
   --second-bg: hsl(218, 28%, 13%);
+  --testimonial-bg: hsl(219, 30%, 18%);
+  --footer-bg: hsl(216, 53%, 9%);
   --white-text: hsl(0, 0%, 100%);
   --cyan: hsl(176, 68%, 64%);
   --blue: hsl(198, 60%, 50%);
@@ -163,4 +165,102 @@ body {
   min-width: 3rem;
   min-height: 3rem;
   transform: scale(0.5);
+}
+/* Testimonial CSS */
+#testimonial {
+  background: var(--second-bg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position-y: 3.5rem;
+  background-position-x: 3rem;
+  min-height: 25rem;
+}
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--testimonial-bg);
+  width: 35%;
+  padding: 1rem 2.5rem;
+  transform: scale(0.8);
+  border-radius: 10px;
+}
+.customer {
+  display: flex;
+  align-items: center;
+}
+.test-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 5px solid var(--cyan);
+}
+.feedback {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.customer-detail {
+  line-height: 0.5rem;
+  margin-left: 1rem;
+}
+.test-para {
+  font-family: var(--secondary-font), sans-serif;
+}
+.test-des {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 0.8rem;
+}
+/* Email CSS */
+#email-container {
+  display: flex;
+  justify-content: center;
+  background: var(--second-bg);
+}
+#email-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background: var(--testimonial-bg);
+  padding: 0 3rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  position: relative;
+  top: 6.5rem;
+}
+#form {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.email-inp {
+  min-width: 60%;
+  border-radius: 2rem;
+}
+.email-inp::placeholder {
+  position: relative;
+  left: 0.5rem;
+}
+.email-btn {
+  top: 0rem;
+  padding: 0.7rem 3rem;
+}
+.email-head {
+  font-family: var(--secondary-font), sans-serif;
+}
+.email-para {
+  font-family: var(--primary-font), sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+  bottom: 1rem;
+}
+/* Footer CSS */
+#footer {
+  display: flex;
+  background: var(--footer-bg);
+  min-height: 20rem;
 }
