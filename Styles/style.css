@@ -471,3 +471,16 @@ input[type="text"]:focus {
     font-size: 10px;
   }
 }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /* Team */
+  #team {
+    flex-direction: column;
+  }
+  #team-content {
+    padding-left: 1rem;
+  }
+  /* Testimonial CSS */
+  .customer-detail {
+    line-height: 1.5rem;
+  }
+}
